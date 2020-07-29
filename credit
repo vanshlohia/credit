@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <cs50.h>
+
+int main(void)
+{
+//prompt user for CC number  
+    long CCnumber;
+    do 
+    {
+        CCnumber = get_long("Number: \n");
+    }
+    while (CCnumber <= 0);
+   
+//check CCnumber lenght
+    int counter = 0;
+    while (CCnumber >0)
+        {
+            counter++;
+        
+        }
+    
+    if (counter == 16)
+        {
+            printf("American Express");
+        }
+    else
+        {
+            printf("INVALID");
+        }
+}
